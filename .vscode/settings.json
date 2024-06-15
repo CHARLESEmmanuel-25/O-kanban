@@ -1,0 +1,11 @@
+{
+  "files.associations": {"*.ejs": "html"},
+  "htmlhint.options": {
+    "spec-char-escape": false,
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+}

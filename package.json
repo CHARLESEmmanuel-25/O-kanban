@@ -1,0 +1,65 @@
+{
+    "name": "okanban",
+    "version": "1.0.0",
+    "description": "## Description du projet",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "build:front": "vite build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.56.0",
+        "eslint-plugin-import": "^2.29.1",
+        "nodemon": "^3.1.0"
+    },
+    "overrides": {
+        "rollup": "npm:@rollup/wasm-node"
+    },
+    "dependencies": {
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "csrf-csrf": "^3.0.4",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "joi": "^17.13.0",
+        "pg": "^8.11.5",
+        "sanitize-html": "^2.13.0",
+        "sequelize": "^6.37.3",
+        "sortablejs": "^1.15.2",
+        "vite": "^5.2.11"
+    },
+    "prettier": {
+        "printWidth": 80,
+        "tabWidth": 4,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "overrides": [
+            {
+                "files": "*.js",
+                "options": {
+                    "parser": "babel"
+                }
+            },
+            {
+                "files": "*.json",
+                "options": {
+                    "parser": "json",
+                    "tabWidth": 4
+                }
+            }
+        ],
+        "semi": true,
+        "requirePragma": false,
+        "proseWrap": "preserve",
+        "arrowParens": "avoid",
+        "htmlWhitespaceSensitivity": "css",
+        "quoteProps": "as-needed"
+    }
+}

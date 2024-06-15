@@ -1,0 +1,40 @@
+GET http://localhost:5000/ HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:5000/lists HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:5000/lists/4 HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://localhost:5000/lists HTTP/1.1
+content-type: application/json
+x-auth-token: a06979dc431a1b403052be37c0f1e461b59075129c0c38ff1e0aa373a601f55257ca6ff8be07eca7c6154a28b1661bf85c24ef2ee8ae1fa252ce1f5b611dfaa4
+
+{
+    "title": "Un liste",
+    "position": 8
+
+}
+
+###
+
+PATCH http://localhost:5000/lists/1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "",
+    "position": 4
+}
+
+
+###
+
+DELETE http://localhost:5000/lists/8 HTTP/1.1
+content-type: application/json

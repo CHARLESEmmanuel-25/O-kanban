@@ -1,0 +1,5 @@
+.idea
+node_modules
+.env
+arnaud.js
+dist/assets/index*

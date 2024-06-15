@@ -1,0 +1,5 @@
+LISTE ( code_liste, nom, ordre )
+LABEL ( code_label, nom, couleur )
+CARTE ( code_carte, titre, ordre, couleur, list_id: #code_liste(LISTE) )
+CARTE_HAS_LABEL ( label_id: #code_label(LABEL), carte_id:_#code_carte(CARTE) )
+
